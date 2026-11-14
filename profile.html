@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+    <style>
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: antiquewhite;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    text-align: center;
+    padding: 2.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1.5rem 0;
+    opacity: 0.9;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.2rem;
+    margin: 0 0.4rem;
+    border-radius: 20px;
+    transition: background 0.3s ease;
+    font-weight: 500;
+}
+
+header a:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+.card .edu {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e3c72;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #f0f2f5;
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+.card div:not(.edu) {
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card a {
+    color: #2a5298;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raj Das</h1>
+        <p>B-Tech (AI/ML) Student</p>
+        <a href="#">Profile</a>
+        <a href="#">Skills</a>
+        <a href="#">Contacts</a>
+    </header>
+    <main>
+        <div class="cards">
+            <div class="card">
+                <div class="edu">About me</div>
+                <div>
+                    <p>Hello! I am Raj DAS, a first-year B.Tech Computer Science Engineering student. I enjoy learning about programming, technology and problem-solving.</p>
+                </div>
+            </div>
+        <div class="card">
+            <div class="edu">Eductaion</div>
+            <div>College: Bosscoder School Of Technology</div>
+            <div>Year: 2026-2030</div>
+            <div>School: Bethany School</div>
+            <div>Year: 2014-2026</div>
+        </div>
+        <div class="card">
+            <div class="edu">skills</div>
+            <div>DSA(Java and Python)</div>
+            <div>Web Development(HTML, CSS and JavaScript)</div>
+            <div>Agentic AI</div>
+        </div>
+        <div class="card">
+            <div class="edu">Projects</div>
+            <div>My profile page</div>
+            <div>Simple calculator</div>
+            <div>Claude clone</div>
+            <div>SpaceX Falcon thruster balancing system </div>
+        </div>
+        <div class="card">
+            <div class="edu">Hobbies</div>
+            <div>Cycling</div>
+            <div>Reading</div>
+            <div>Watching Movies</div>
+            <div>Eating</div>
+        </div>
+        <div class="card">
+            <div class="edu">Github</div>
+            <div><a href="https://github.com/rajdasrd1528-ops/Webdev">Link</a></div>
+        </div>
+        </div>
+    </main>
+</body>
+</html>
