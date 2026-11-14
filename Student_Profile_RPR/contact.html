@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Raj Das</title>
+
+  <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #1e1e1e;
+      color: #ffffff;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      max-width: 900px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .header-text h1 {
+      font-size: 2.5rem;
+      color: #ffffff;
+      margin-bottom: 5px;
+    }
+
+    .header-text p {
+      color: #a0a0a0;
+      font-size: 1.1rem;
+    }
+
+    nav {
+      margin-top: 25px;
+      background-color: #2d2d2d;
+      padding: 15px 30px;
+      border-radius: 8px;
+      display: inline-flex;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #cccccc;
+      text-decoration: none;
+      font-size: 1rem;
+      padding: 8px 16px;
+      border-radius: 4px;
+    }
+
+    nav a:hover {
+      background-color: #444444;
+      color: #ffffff;
+    }
+    
+    nav a.active {
+      background-color: #3b82f6;
+      color: #ffffff;
+    }
+
+    main {
+      max-width: 900px;
+      width: 100%;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    section {
+      background-color: #2d2d2d;
+      padding: 30px;
+      border-radius: 8px;
+      border: 1px solid #444444;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+    
+    .full-width h2 {
+      font-size: 1.8rem;
+    }
+
+    p {
+      color: #cccccc;
+      font-size: 1rem;
+    }
+
+    .github-btn {
+      display: inline-block;
+      background-color: #3b82f6;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .github-btn:hover {
+      background-color: #2563eb;
+    }
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    ul li {
+      background-color: #1e1e1e;
+      color: #cccccc;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      border: 1px solid #444444;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888888;
+      font-size: 0.9rem;
+      margin-top: auto;
+      width: 100%;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+      nav {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="header-text">
+      <h1>Contact Me</h1>
+      <p>Let's Connect and Collaborate</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+      <a href="profile.html">Profile</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="full-width">
+      <h2>Get in Touch</h2>
+      <p>
+        I’m always happy to connect with fellow students, developers, and tech enthusiasts. Whether you’d like to ask a question, share a project idea, or simply say hello, feel free to reach out. My inbox is always open!
+      </p>
+    </section>
+
+    <section>
+      <h2>GitHub Profile</h2>
+      <p>Check out my latest repositories, contributions, and open-source projects.</p>
+      <a href="https://github.com/rajdasrd1528-ops"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="github-btn">
+        View My GitHub &rarr;
+      </a>
+    </section>
+
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>Student Projects</li>
+        <li>Web Development</li>
+        <li>AI & Machine Learning</li>
+        <li>Problem Solving</li>
+        <li>Open Source</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Raj Das | Designed for Collaboration</p>
+  </footer>
+</body>
+</html>
